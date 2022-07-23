@@ -1,0 +1,183 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.world-map{
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  /* background-color: #eee; */
+}
+
+.info {
+  opacity: 0;
+  transition: .2s;
+  width: 130px;
+  background: rgb(247, 247, 247);
+  line-height: 22px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(10px,10px);
+}
+
+.sphere {
+  fill: transparent;
+  /* transform: translate(-60%,0%); */
+}
+
+.country {
+  fill: #ccc;
+  stroke: black;
+  stroke-width: 0.05px;
+  transform: translate(10px,10px);
+}
+
+/* .country:hover {
+  fill: red;
+} */
+.active{
+  transition: .3s;
+}
+.active.green1{
+  fill: #5dff5d;
+}
+.active.green2{
+  fill: #009b00;
+}
+.active.green3{
+  fill: #007700;
+}
+.active.green4{
+  fill: #015701;
+}
+.active.green5{
+  fill: #277e27;
+}
+
+.active.purple1{
+  fill: #b901b9;
+}
+.active.purple2{
+  fill: #9c019c;
+}
+.active.purple3{
+  fill: #850185;
+}
+.active.purple4{
+  fill: #5c015c;
+}
+.active.purple5{
+  fill: #742074;
+}
+
+.active.red1{
+  fill:#ff0000;
+}
+.active.red2{
+  fill:#ce0000;
+}
+.active.red3{
+  fill:#b30000;
+}
+.active.red4{
+  fill:#740101;
+}
+.active.red5{
+  fill:#ff5151;
+}
+
+.active.yellow1{
+  fill: yellow;
+}
+.active.yellow2{
+  fill: #ffff28;
+}
+.active.yellow3{
+  fill: #c0c000;
+}
+.active.yellow4{
+  fill: #8d8d00;
+}
+.active.yellow5{
+  fill: #f4ff57;
+}
+.active.yellow6{
+  fill: #a9b31d;
+}
+
+.active.cyan1{
+  fill: #6cffff;
+}
+.active.cyan2{
+  fill: #00d1d1;
+}
+.active.cyan3{
+  fill: #00b4b4;
+}
+.active.cyan4{
+  fill: #009696;
+}
+.active.cyan5{
+  fill: #006d6d;
+}
+.listcontainer{
+  top: 50px;
+  position: absolute;
+  background-color: #EEE;
+  border-radius:10px ;
+  display: none;
+}
+.listcontainer >div{
+  padding: 4px 0;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.listcontainer h2{
+  padding: 5px 10px 0;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 5px 0 ;
+  border-bottom: solid #ccc 1px;
+  display: block;
+}
+.listcontainer ul{
+  list-style: none;
+  padding-left: 15px;
+  line-height: 20px;
+  margin: 5px 0;
+}
+.listcontainer ul li{
+  font-size: 15px;
+}
+
+/* car info */
+
+.car-info{
+  opacity: .7;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 490px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  transition: .3s;
+}
+.car-info .images{
+  width: 70px;
+  margin: 0 30px 20px;
+}
+.car-info .images img{
+  width: 100%;
+}
+.car-info .images p{
+  font-size: 15px;
+  margin: 5px auto;
+  text-align: center;
+}
